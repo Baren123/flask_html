@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br></br>
+<th>zynq info</th>
+<table width="1000" border="1">
+    <tr>
+        <td>cpu_usage:{{cpu_usage}}</td>
+        <td>mem_usage:{{mem_usage}}</td>
+		<td>current_ip:{{current_ip}}</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <script language="javascript" type="text/javascript">
+	
+	var data = {'cpu_usage':i,'mem_usage':0.384,'current_ip':0.95
+	};
+	$.ajax({
+		type: "get",
+		async: false,
+		url: "http://127.0.0.1:5020/getInfo",
+		data: {cpu_usage:$("#cpu_usage").val(), mem_usage:$("#mem_usage").val(), current_ip:$("#current_ip").val()},
+		dataType: "jsonp",
+		success: function(data){
+		},
+		error: function(xhr, type){
+		}
+	});
+	
+    </script>
+
+	 <!--<script type="text/JavaScript">
+        function timeRefresh(timeoutPeriod) {
+            setTimeout("location.reload(true);", timeoutPeriod);
+        }
+    </script>-->
+
+</head>
+<body>
+    <!--<a href="javascript:location.reload(true);">Refresh this page</a>-->
+
+<!--<body onLoad="JavaScript:timeRefresh(2000);">-->
+   <!--<h3>This page will auto refresh after 5 seconds.</h3>-->
+<br></br>
+<th>zynq info</th>
+<table width="1000" border="1">
+    <tr>
+        <td>cpu_usage:{{cpu_usage}}</td>
+        <td>mem_usage:{{mem_usage}}</td>
+		<td>current_ip:{{current_ip}}</td>
+    </tr>
+</table>
+<br></br>
+
+<th>rk_1 info</th>
+<table width="1000" border="1">
+    <tr>
+        <td>rk_1_cpu_usage:{{rk_1_cpu_usage}}</td>
+        <td>rk_1_gpu_usage:{{rk_1_gpu_usage}}</td>
+		<td>rk_1_mem_usage:{{rk_1_mem_usage}}</td>
+    </tr>
+
+	<tr>
+		<td>rk_1_ip:{{rk_1_ip}}</td>
+		<td>rk_1_cpu_temp:{{rk_1_cpu_temp}}</td>
+		<td>rk_1_gpu_temp:{{rk_1_gpu_temp}}</td>
+    </tr>
+</table>
+<br></br>
+<th>rk_2 info</th>
+<table width="1000" border="1">
+	<tr>
+        <td>rk_2_cpu_usage:{{rk_2_cpu_usage}}</td>
+        <td>rk_2_gpu_usage:{{rk_2_gpu_usage}}</td>
+		<td>rk_2_mem_usage:{{rk_2_mem_usage}}</td>
+    </tr>
+	<tr>
+		<td>rk_2_ip:{{rk_2_ip}}</td>
+		<td>rk_2_cpu_temp:{{rk_2_cpu_temp}}</td>
+		<td>rk_2_gpu_temp:{{rk_2_gpu_temp}}</td>
+    </tr>
+</table>
+<br></br>
+<th>rk_3 info</th>
+<table width="1000" border="1">
+	<tr>
+        <td>rk_3_cpu_usage:{{rk_3_cpu_usage}}</td>
+        <td>rk_3_gpu_usage:{{rk_3_gpu_usage}}</td>
+		<td>rk_3_mem_usage:{{rk_3_mem_usage}}</td>
+    </tr>
+	<tr>
+		<td>rk_3_ip:{{rk_3_ip}}</td>
+		<td>rk_3_cpu_temp:{{rk_3_cpu_temp}}</td>
+		<td>rk_3_gpu_temp:{{rk_3_gpu_temp}}</td>
+    </tr>
+</table>
+<br></br>
+<th>rk_4 info</th>
+<table width="1000" border="1">
+	<tr>
+        <td>rk_4_cpu_usage:{{rk_4_cpu_usage}}</td>
+        <td>rk_4_gpu_usage:{{rk_4_gpu_usage}}</td>
+		<td>rk_4_mem_usage:{{rk_4_mem_usage}}</td>
+    </tr>
+	<tr>
+		<td>rk_4_ip:{{rk_4_ip}}</td>
+		<td>rk_4_cpu_temp:{{rk_4_cpu_temp}}</td>
+		<td>rk_4_gpu_temp:{{rk_4_gpu_temp}}</td>
+    </tr>
+</table>
+
+<br></br>
+<th>rk_5 info</th>
+<table width="1000" border="1">
+	<tr>
+        <td>rk_5_cpu_usage:{{rk_5_cpu_usage}}</td>
+        <td>rk_5_gpu_usage:{{rk_5_gpu_usage}}</td>
+		<td>rk_5_mem_usage:{{rk_5_mem_usage}}</td>
+    </tr>
+	<tr>
+		<td>rk_5_ip:{{rk_5_ip}}</td>
+		<td>rk_5_cpu_temp:{{rk_5_cpu_temp}}</td>
+		<td>rk_5_gpu_temp:{{rk_5_gpu_temp}}</td>
+    </tr>
+</table>
+
+<br></br>
+<th>rk_6 info</th>
+<table width="1000" border="1">
+	<tr>
+        <td>rk_6_cpu_usage:{{rk_6_cpu_usage}}</td>
+        <td>rk_6_gpu_usage:{{rk_6_gpu_usage}}</td>
+		<td>rk_6_mem_usage:{{rk_6_mem_usage}}</td>
+    </tr>
+	<tr>
+		<td>rk_6_ip:{{rk_6_ip}}</td>
+		<td>rk_6_cpu_temp:{{rk_6_cpu_temp}}</td>
+		<td>rk_6_gpu_temp:{{rk_6_gpu_temp}}</td>
+    </tr>
+</table>
+
+<br></br>
+<th>rk_7 info</th>
+<table width="1000" border="1">
+	<tr>
+        <td>rk_7_cpu_usage:{{rk_7_cpu_usage}}</td>
+        <td>rk_7_gpu_usage:{{rk_7_gpu_usage}}</td>
+		<td>rk_7_mem_usage:{{rk_7_mem_usage}}</td>
+    </tr>
+	<tr>
+		<td>rk_7_ip:{{rk_7_ip}}</td>
+		<td>rk_7_cpu_temp:{{rk_7_cpu_temp}}</td>
+		<td>rk_7_gpu_temp:{{rk_7_gpu_temp}}</td>
+    </tr>
+</table>
+
+<br></br>
+<th>rk_8 info</th>
+<table width="1000" border="1">
+	<tr>
+        <td>rk_8_cpu_usage:{{rk_8_cpu_usage}}</td>
+        <td>rk_8_gpu_usage:{{rk_8_gpu_usage}}</td>
+		<td>rk_8_mem_usage:{{rk_8_mem_usage}}</td>
+    </tr>
+	<tr>
+		<td>rk_8_ip:{{rk_8_ip}}</td>
+		<td>rk_8_cpu_temp:{{rk_8_cpu_temp}}</td>
+		<td>rk_8_gpu_temp:{{rk_8_gpu_temp}}</td>
+    </tr>
+</table>
+
+<br></br>
+<th>rk_9 info</th>
+<table width="1000" border="1">
+	<tr>
+        <td>rk_9_cpu_usage:{{rk_9_cpu_usage}}</td>
+        <td>rk_9_gpu_usage:{{rk_9_cpu_usage}}</td>
+		<td>rk_9_mem_usage:{{rk_9_cpu_usage}}</td>
+    </tr>
+	<tr>
+		<td>rk_9_ip:{{rk_9_ip}}</td>
+		<td>rk_9_cpu_temp:{{rk_9_cpu_temp}}</td>
+		<td>rk_9_gpu_temp:{{rk_9_gpu_temp}}</td>
+    </tr>
+</table>
+<br></br>
+<th>rk_10 info</th>
+<table width="1000" border="1">
+	<tr>
+        <td>rk_10_cpu_usage:{{rk_10_cpu_usage}}</td>
+        <td>rk_10_gpu_usage:{{rk_10_gpu_usage}}</td>
+		<td>rk_10_mem_usage:{{rk_10_mem_usage}}</td>
+    </tr>
+	<tr>
+		<td>rk_10_ip:{{rk_10_ip}}</td>
+		<td>rk_10_cpu_temp:{{rk_10_cpu_temp}}</td>
+		<td>rk_10_gpu_temp:{{rk_10_gpu_temp}}</td>
+    </tr>
+</table>
+</body>
+</html>
